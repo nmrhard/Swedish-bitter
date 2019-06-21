@@ -1,0 +1,450 @@
+body {
+	margin: 0;
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #303030;
+	background-color: #ffffff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	-webkit-clip-path: inset(100%);
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.button {
+	position: relative;
+	padding-top: 19px;
+	padding-bottom: 19px;
+	padding-left: 76px;
+	padding-right: 110px;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	color: #ffffff;
+	border: none;
+	background-color: #7eb252;
+	cursor: pointer;
+}
+
+.button::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 58px;
+	width: 31px;
+	height: 9px;
+	margin-top: -5px;
+	background-image: url(../img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.main-header {
+	background-color: #ffffff;
+}
+
+.header-wrapper {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 105px;
+}
+
+.header-wrapper .telephone {
+	margin-left: auto;
+}
+
+.header-wrapper .logo {
+	width: 200px;
+}
+
+.header-wrapper .delivery {
+	width: 300px;
+	padding-left: 28px;
+	padding-right: 61px;
+	color: #9a9a9a;
+}
+
+.telephone {
+	position: relative;
+	width: 200px;
+	text-align: right;
+}
+
+.telephone::after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/icon-telephone.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.telephone a {
+	font-size: 20px;
+	color: #303030;
+}
+
+.telephone span {
+	font-size: 12px;
+	line-height: 18px;
+	color: #9a9a9a;
+}
+
+.promo {
+	margin-bottom: 98px;
+}
+
+.promo-bg {
+	width: 1720px;
+	margin: 0 auto;
+	min-height: 740px;
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.promo .columns,
+.diseases .columns {
+	display: flex;
+}
+
+.packaging {
+	width: 585px;
+	padding-top: 95px;
+	text-align: center;
+}
+
+.about-good {
+	display: flex;
+	flex-direction: column;
+	width: 585px;
+	padding-top: 175px;
+	padding-left: 15px;
+}
+
+.promo-text {
+	color: #ffffff;
+}
+
+.promo-text span:first-child {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+}
+
+.promo-text h3 {
+	margin: 0;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	font-weight: 600;
+	font-size: 60px;
+}
+
+.promo-text span:last-child {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.form-wrapper {
+	margin-top: 90px;
+	padding-top: 19px;
+	padding-left: 19px;
+	padding-right: 19px;
+	background-color: #ffffff;
+}
+
+.more-info-from {
+	display: flex;
+	flex-direction: column;
+	padding-top: 40px;
+	padding-left: 50px;
+	background: #ffffff;
+	border: 1px solid #c8dcba;
+}
+
+.more-info-from span {
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+}
+
+.more-info-from input[type="text"] {
+	width: 200px;
+	padding-bottom: 10px;
+	background: #ffffff;
+	border: none;
+	border-bottom: 1px solid #cddcbc;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.more-info-from input[type="text"]::placeholder {
+	font-size: 14px;
+	line-height: 23px;
+	color: #a8c48c;
+	opacity: 1;
+}
+
+.user-data {
+	display: flex;
+	padding-top: 40px;
+}
+
+.user-data p {
+	margin: 0;
+}
+
+.user-data .input-name {
+	margin-right: 30px;
+}
+
+.more-info-from .button {
+	margin-left: auto;
+	margin-top: 59px;
+}
+
+.facts {
+	margin-bottom: 200px;	
+}
+
+.facts-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.facts-list .facts-item {
+	position: relative;
+	width: 270px;
+	padding-top: 35px;
+	padding-left: 70px;
+	box-sizing: border-box;
+}
+
+.facts-list .facts-item:last-child {
+	padding-left: 40px;
+}
+
+.facts-item::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: 26px;
+	height: 26px;
+	background-image: url(../img/icon-circle.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.facts-item:last-child::before {
+	left: 0;
+} 
+
+.facts-item h3,
+.facts-item span {
+	display: inline-block;
+	padding-bottom: 3px;
+	margin: 0;
+	font-size: 30px;
+	font-weight: 600;
+	color: #a4c58c;
+	border-bottom: 3px solid #a4c58c;
+}
+
+.facts-item span {
+	font-size: 18px;
+	border: none;
+}
+
+.facts-item p {
+	margin: 0;
+	margin-top: 22px;
+	color: #000000;
+}
+
+section .section-title {
+	margin: 0;
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 700;
+}
+
+.diseases {
+	position: relative;
+}
+
+.diseases-column {
+	width: 670px;
+}
+
+.diseases .section-title {
+	width: 600px;
+	padding-top: 42px;
+	padding-bottom: 42px;
+}
+
+.diseases-bg {
+	width: 1720px;
+	margin: 0 auto;
+	padding-bottom: 31px;
+	margin-bottom: 20px;
+	background-color: #f6f9f3;
+}
+
+.diseases .diseases-list,
+.diseases .additional-diseases-list {
+	margin: 0;
+	padding: 0;
+	padding-right: 20px;
+	list-style-type: none;
+}
+
+.additional-diseases-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.diseases-list .diseases-item,
+.additional-diseases-list .additional-diseases-item {
+	display: flex;
+	align-items: center;
+	padding-top: 25px;
+	padding-bottom: 24px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 600;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e6efde;
+}
+
+.additional-diseases-list .additional-diseases-item {
+	width: 270px;
+	padding-right: 29px;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.additional-diseases-list .long-item {
+	width: 302px;
+	padding-right: 48px;
+	border-right: 1px solid #e6efde;
+}
+
+.additional-diseases-list .short-item {
+	padding-top: 34px;
+	padding-bottom: 35px;
+}
+
+.diseases-item .number-item,
+.additional-diseases-list .number-item {
+	display: inline-block;
+	margin-right: 18px;
+	color: #a4c58c;
+}
+
+.additional-diseases-list .number-item {
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.8px;
+}
+
+.short-item .number-item {
+	padding-left: 38px;
+}
+
+.reviews-column {
+	width: 500px;
+}
+
+.picture-body {
+	position: absolute;
+	bottom: 111px;
+}
+
+.reviews-wrapper {
+	position: absolute;
+	bottom: 96px;
+	width: 415px;
+	padding: 15px;
+	background-color: #f6f9f3;
+}
+
+.reviews-column .review {
+	position: relative;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	padding-left: 51px;
+	border: 1px solid #a4c58c;
+}
+
+.review p {
+	margin: 0;
+}
+
+.review a {
+	position: absolute;
+	left: 43px;
+	bottom: -10px;
+	padding-left: 9px;
+	padding-right: 7px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #7eb152;
+	text-decoration: underline;
+	background-color: #f6f9f3;
+}
+
+.fix-problem-wrapper {
+	text-align: right;
+}
+
+.fix-problem-button {
+	display: inline-block;
+	padding-left: 124px;
+	padding-right: 150px;
+}
+
+.fix-problem-button::after {
+	right: 70px;
+}
