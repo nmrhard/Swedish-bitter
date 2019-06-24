@@ -309,6 +309,7 @@ section .section-title {
 
 .diseases {
 	position: relative;
+	margin-bottom: 200px;
 }
 
 .diseases-column {
@@ -447,4 +448,99 @@ section .section-title {
 
 .fix-problem-button::after {
 	right: 70px;
+}
+
+.advantages {
+	position: relative;
+	width: 1720px;
+	margin: 0 auto;
+}
+
+.advantages-image {
+	position: absolute;
+}
+
+.advantages .columns {
+	display: flex;
+}
+
+.popular-bitter {
+	min-width: 600px;
+}
+
+.popular-bitter-wrapper {
+	position: absolute;
+	bottom: -115px;
+	width: 600px;
+	padding: 20px;
+	padding-left: 19px;
+	padding-right: 19px;
+	background-color: #ffffff;
+	box-sizing: border-box;
+}
+
+.popular-bitter-wrapper .description {
+	border: 1px solid #c8dcba;
+}
+
+.description p {
+	margin: 0;
+	padding: 39px;
+	padding-right: 73px;
+}
+
+.popular-bitter-wrapper .get-bitter {
+	display: block;
+	padding-left: 40px;
+	padding-right: 79px;
+}
+
+.get-bitter::after {
+	right: 30px;
+}
+
+.reasons {
+	width: 570px;
+	padding-left: 70px;
+}
+
+.reasons .section-title {
+	padding-top: 43px;
+	margin-bottom: 41px;
+}
+
+.reasons b {
+	line-height: 20px;
+}
+
+.reasons-list {
+	margin: 0;
+	margin-top: 57px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.reasons-list .reasons-item {
+	position: relative;
+	padding-left: 45px;
+	margin-bottom: 47px;
+	line-height: 22px;
+}
+
+.reasons-list .reasons-item::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	border: 1px solid #aac994;
+	border-left-style: none;
+	border-top-style: none;
+	transform: rotate(-45deg);
+}
+
+.reasons-list .reasons-item:last-child {
+	margin-bottom: 0;	
 }
