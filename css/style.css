@@ -202,7 +202,8 @@ a {
 	text-transform: uppercase;
 }
 
-.more-info-from input[type="text"] {
+.more-info-from input[type="text"],
+.subscribe input[type="email"] {
 	width: 200px;
 	padding-bottom: 10px;
 	background: #ffffff;
@@ -212,7 +213,8 @@ a {
 	outline: none;
 }
 
-.more-info-from input[type="text"]::placeholder {
+.more-info-from input[type="text"]::placeholder,
+.subscribe input[type="email"]::placeholder {
 	font-size: 14px;
 	line-height: 23px;
 	color: #a8c48c;
@@ -454,6 +456,7 @@ section .section-title {
 	position: relative;
 	width: 1720px;
 	margin: 0 auto;
+	margin-bottom: 315px;
 }
 
 .advantages-image {
@@ -543,4 +546,72 @@ section .section-title {
 
 .reasons-list .reasons-item:last-child {
 	margin-bottom: 0;	
+}
+
+.history-wrapper {
+	position: relative;
+	width: 1720px;
+	margin: 0 auto;
+}
+
+.history .section-title {
+	padding-top: 92px;
+	margin-bottom: 46px;
+}
+
+.history .columns {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.history-text-wrapper {
+	position: absolute;
+	left: 0;
+	width: 670px;
+	padding-left: 275px;
+	padding-right: 30px;
+	padding-top: 52px;
+	padding-bottom: 58px;
+	background-color: #f6f9f3;
+}
+
+.history-description {
+	width: 670px;
+}
+
+.history-image {
+	width: 775px;
+}
+
+.history-description .subscribe {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 400px;
+	margin-left: -385px;
+}
+
+.history-text-wrapper p {
+	margin: 0;
+	margin-bottom: 11px;
+}
+
+.history-text-wrapper p:last-child {
+	margin-bottom: 0;
+}
+
+.subscribe b {
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.subscribe p {
+	margin: 0;	
+}
+
+.subscribe input[type="email"] {
+	width: 100%;
+	padding-top: 30px;
+	margin-bottom: 34px;
 }
