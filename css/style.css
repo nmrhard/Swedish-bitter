@@ -704,12 +704,12 @@ section .section-title {
 }
 
 .extra-item {
+	position: relative;
 	width: 310px;
 	padding-top: 72px;
 	padding-bottom: 72px;
 	border: 1px solid #e4eddc;
 }
-
 .extra-item p {
 	margin: 0;
 }
@@ -729,4 +729,33 @@ section .section-title {
 	line-height: 20px;
 	letter-spacing: 0.8px;
 	text-transform: uppercase;
+}
+
+.extra-item::before {
+	content: '';
+	position: absolute;
+	top: 105px;
+	left: 105px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.herbal-item::before{
+	width: 88px;
+	height: 88px;
+	background-image: url(../img/herbs.png);
+}
+
+.instruction-item::before{
+	top: 110px;
+	width: 101px;
+	height: 73px;
+	background-image: url(../img/instruction.png);
+}
+
+.sertificate-item::before{
+	top: 110px;
+	width: 86px;
+	height: 72px;
+	background-image: url(../img/sertificat.png);
 }
