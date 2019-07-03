@@ -971,6 +971,10 @@ section .section-title {
 	margin-bottom: 0;
 }
 
+.comments {
+	margin-bottom: 200px;
+}
+
 .comments-wrapper {
 	width: 1720px;
 	margin: 0 auto;
@@ -1075,4 +1079,63 @@ section .section-title {
 	font-weight: 700;
 	color: #7eb152;
 	text-decoration: underline;
+}
+
+.make-wrapper {
+	position: relative;
+	width: 1720px;
+	margin: 0 auto;
+}
+
+.make-description-wrapper {
+	position: absolute;
+	top: 59px;
+	right: 238px;
+	width: 680px;
+	padding: 19px;
+	background-color: #ffffff;
+}
+
+.make-description {
+	width: 528px;
+	padding-left: 70px;
+	padding-top: 60px;
+	padding-right: 42px;
+	padding-bottom: 94px;
+	border: 1px solid #c8dcba;
+}
+
+.make-description h3 {
+	margin: 0;
+	margin-bottom: 47px;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.make-description p {
+	margin: 0;
+	margin-bottom: 14px;
+	line-height: 22px;
+}
+.make-description p:last-of-type {
+	margin-top: 29px;
+	margin-bottom: 82px;
+}
+
+.make-description b {
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+}
+
+.make-button {
+	padding-top: 26px;
+	padding-bottom: 26px;
+	padding-left: 34px;
+	padding-right: 80px;
+}
+
+.button.make-button::after {
+	right: 28px;
 }
