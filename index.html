@@ -3,21 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Swedish Bitter</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap&subset=cyrillic"> 89
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap&subset=cyrillic">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
 		<div class="container">
-			<div class="header-wrapper">
-				<a class="logo">
-					<img src="img/logo.png" alt="Swedish Bitter" width="198" height="29">
-				</a>
-				<span class="delivery">Доставка по всей России</span>
-				<div class="telephone">
-					<a href="tel:88000000000" aria-label="Контактный номер телефона">8 800 000-00-00</a><br>
-					<span>Звонок бесплатный</span>
+			<div class="flex-wrapper">
+				<div class="header-wrapper">
+					<a class="logo">
+						<img src="img/logo.png" alt="Swedish Bitter" width="198" height="29">
+					</a>
+					<span class="delivery">Доставка по всей России</span>
+					<div class="telephone">
+						<a href="tel:88000000000" aria-label="Контактный номер телефона">8 800 000-00-00</a><br>
+						<span>Звонок бесплатный</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -54,7 +56,9 @@
 									<input id="user-phone" name="phone-number" type="text" placeholder="Телефон" required>
 								</p>
 							</div>
-							<button class="button">Узнать</button>
+							<div class="button-row">
+								<button type="submit" class="more-info-button button">Узнать</button>
+							</div>
 						</form>
 					</div>
 				</section>
@@ -116,8 +120,8 @@
 							Головные боли
 						</li>
 					</ul>
-					<ul class="additional-diseases-list">
-						<div class="first-column">
+					<div class="additional-diseases-list">
+						<ul class="list-column">
 							<li class="additional-diseases-item long-item">
 								<span class="number-item">06.</span>
 								<span class="diseases-title">Синяки, шишки, ожоги, порезы долго не проходят </span>
@@ -126,8 +130,8 @@
 								<span class="number-item">07.</span>
 								Плохо засыпаете и часто просыпаетесь
 							</li>
-						</div>
-						<div class="second-column">
+						</ul>
+						<ul class="list-column">
 							<li class="additional-diseases-item short-item">
 								<span class="number-item">08.</span>
 								Проблемы с желудком
@@ -136,8 +140,8 @@
 								<span class="number-item">09.</span>
 								Стресс
 							</li>
-						</div>
-					</ul>
+						</ul>
+					</div>
 				</div>
 				<div class="reviews-column">
 					<img class="picture-body" src="img/body.jpg" alt="Секлет человека с видимыми грницами тела на зеленом фоне." width="500" height="689">
@@ -167,7 +171,7 @@
 							таких как Германия и Австрия, бальзам Шведская
 							Горечь продается в каждой аптеке!
 						</p>
-						<a href="#" class="get-bitter button">Получить средство-панацею к себе в аптечку</a>
+						<a href="#" class="get-bitter-button button">Получить средство-панацею к себе в аптечку</a>
 					</div>
 				</div>
 			</div>
@@ -222,9 +226,9 @@
 					<form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru">
 						<p class="input-email">
 							<label class="visually-hidden" for=user-email>Електронная почта</label>
-							<input id="user-email" name="email" type="email" placeholder="Email" required>
+							<input id="user-email" name="email" type="email" placeholder="E-mail" required>
 						</p>
-						<button class="button">оставить почту</button>
+						<button type="submit" class="button-subscribe button">оставить почту</button>
 					</form>
 				</div>
 			</div>
@@ -234,6 +238,7 @@
 		</div>
 	</section>
 	<section class="quote">
+		<h2 class="visually-hidden">Цитата доктора Клауса Замста</h2>
 		<div class="container">
 			<blockquote class="quote-text">
 				<p>«Кто принимает бальзам утром и вечером, тому не нужны
@@ -250,8 +255,8 @@
 	<section class="extra">
 		<div class="container">
 			<h2 class="section-title">
-				Что вы получите <br>
-				вместе со сбором трав <br>
+				<span class="format-title">Что вы получите <br></span>
+				<span class="format-title">вместе со сбором трав <br></span>				
 				«Шведская горечь»?
 			</h2>
 		</div>
@@ -397,7 +402,9 @@
 							Соединяясь вместе они создают мощный очищающий эффект. Как оказалось, 
 							именно за счет этого эффекта бальзам способен исцелять многие болезни.
 						</p>
-						<a href="" class="button">заказать сбор трав</a>
+						<div class="button-row">
+							<a href="#" class="order-button button">заказать сбор трав</a>
+						</div>
 					</div>
 				</div>
 				<ul class="composition-list">
@@ -428,6 +435,7 @@
 				<li class="comment-title">от зарубежных потребителей</li>
 			</ul>
 			<section>
+				<h3 class="visually-hidden">Комментарии российских потрибителей</h3>
 				<div class="container">
 					<ul class="comments-list">
 						<li class="comment-item">
@@ -461,35 +469,98 @@
 						</li>
 					</ul>
 				</div>
+			</section>
+		</div>
+		<div class="comments-action">
+			<div class="container">
+				<a href="#" class="read-more-button">Читать ещё отзывы</a>
+				<a href="#" class="button button-comments">Присоединиться к тем, кто решил свои проблемы</a>
 			</div>
-			<div class="comments-action">
-				<div class="container">
-					<a href="#" class="read-more-button">Читать ещё отзывы</a>
-					<a href="#" class="button button-comments">Присоединиться к тем, кто решил свои проблемы</a>
+		</div>
+	</section>
+	<section class="make">
+		<h2 class="visually-hidden">Создание эликсира</h2>
+		<div class="make-wrapper">
+			<img src="img/make-bitter.jpg" alt="Наполовину заполненая бутылка с готовым экликсиром, рядом упаковка с травой" width="1074" height="775">
+			<div class="make-description-wrapper">
+				<div class="make-description">
+					<h3>Вы принимаете участие в создании эликсира</h3>
+					<p>
+						Приготовление бальзама потребует от вас минимум усилий. Достаточно залить травы 1,5 литрами водки и настоять в течение 14 дней ежедневно взбалтывая.
+					</p>
+					<p>
+						Но даже такое небольшое количество действий даст вам возможность почувствовать себя настоящим врачевателем 
+						и привнесет вашу энергетику в получившийся целительный эликсир.
+					</p>
+					<p>
+						<b>Настоя одной упаковки хватает на 4-5 месяцев</b>
+					</p>
+					<a href="#" class="button make-button">создать эликсир молодости и здоровья</a>
 				</div>
 			</div>
-		</section>
-		<section class="make">
-			<h2 class="visually-hidden">Создание эликсира</h2>
-			<div class="make-wrapper">
-				<img src="img/make-bitter.jpg" alt="Наполовину заполненая бутылка с готовым экликсиром, рядом упаковка с травой" width="1074" height="775">
-				<div class="make-description-wrapper">
-					<div class="make-description">
-						<h3>Вы принимаете участие в создании эликсира</h3>
-						<p>
-							Приготовление бальзама потребует от вас минимум усилий. Достаточно залить травы 1,5 литрами водки и настоять в течение 14 дней ежедневно взбалтывая.
-						</p>
-						<p>
-							Но даже такое небольшое количество действий даст вам возможность почувствовать себя настоящим врачевателем 
-							и привнесет вашу энергетику в получившийся целительный эликсир.
-						</p>
-						<p>
-							<b>Настоя одной упаковки хватает на 4-5 месяцев</b>
-						</p>
-						<a href="#" class="button make-button">создать эликсир молодости и здоровья</a>
+		</div>
+	</section>
+	<section class="warranty">
+		<div class="container">
+			<h2 class="section-title">Гарантия качества</h2>
+		</div>
+		<div class="warranty-wrapper">
+			<div class="container columns">
+				<div class="warranty-desription">
+					<span class="quality"></span>
+					<p class="reputation">
+						<b>
+							Если бальзам вам не понравится, мы вернем деньги.
+							Сразу и без лишних вопросов. Мы дорожим своей 
+							репутацией и уверены в продукте на 100%
+						</b>
+					</p>
+					<div class="warranty-desription-wrapper">
+						<div class="desription">
+							<div class="text-row">
+								<p>
+									Этот эликсир – именно то средство, которое вам 
+									всегда захочется иметь дома в аптечке и рекомен-
+									довать своим близким.
+								</p>
+								<p>
+									К каждой упаковке «Шведской горечи» мы прикла-
+									дываем немецкий сертификат качества.
+								</p>
+							</div>
+							<div class="button-row">
+								<a href="" class="button">заказать сбор трав</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="certificate-image">
+					<div class="certificate-wrapper">
+						<img src="img/certificate.jpg" alt="Сертификат подтвржающий что эликсир содержит безопасные компоненты." width="416" height="644">
+					</div>						
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="main-footer">
+		<div class="container">
+			<div class="flex-wrapper">
+				<div class="footer-wrapper">
+					<a class="logo">
+						<img src="img/logo.png" alt="Swedish Bitter" width="198" height="29">
+					</a>
+					<div class="footer-menu">
+						<a href="#">Политика конфиденциальности</a>
+						<a href="#">Отказ от ответственности</a>
+						<a href="#">Согласие с рассылкой</a>
+					</div>
+					<div class="telephone">
+						<a href="tel:88000000000" aria-label="Контактный номер телефона">8 800 000-00-00</a><br>
+						<span>Звонок бесплатный</span>
 					</div>
 				</div>
 			</div>
-		</section>
-	</body>
-	</html>
+		</div>
+	</footer>
+</body>
+</html>
