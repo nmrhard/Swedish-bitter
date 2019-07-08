@@ -146,13 +146,18 @@ a {
 	margin-bottom: 88px;
 }
 
-.promo-bg {
+.promo-wrapper {
 	width: 1720px;
-	margin: 0 auto;
 	min-height: 740px;
+	margin: 0 auto;
+}
+
+.promo-bg {
+	height: 544px;
 	background-image: url(../img/header-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	background-color: #1d213c;
 }
 
 .promo .columns,
